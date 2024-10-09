@@ -56,6 +56,10 @@ export default defineComponent({
 </script>
 
 <style scoped>
+a {
+  text-decoration: none !important;
+}
+
 .text-container {
   background-color: rgba(7, 59, 76);
   padding: 20px;
