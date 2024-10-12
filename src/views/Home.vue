@@ -49,7 +49,8 @@
             L'ensemble du projet est conçu selon les meilleures pratiques de développement, garantissant performance,
             sécurité, et évolutivité.
           </p>
-          <p class="link"><a href="https://github.com/randyrt/vue_mangas_typescript" target="_blank">Voir les codes sources</a>
+          <p class="link text-center"><a href="https://github.com/randyrt/vue_mangas_typescript" target="_blank">Voir
+              les codes sources</a>
           </p>
         </div>
       </div>
@@ -115,7 +116,7 @@ a {
   background-color: rgb(191, 6, 3) !important;
   color: rgb(240, 243, 189) !important;
   text-decoration: none !important;
-  max-width: 250px;
+  max-width: 200px;
   font-weight: bold;
   border-radius: 20px;
   cursor: pointer;
