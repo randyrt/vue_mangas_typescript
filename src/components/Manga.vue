@@ -95,19 +95,19 @@ export default defineComponent({
   setup() {
     const manga = ref<MangasApi>();
 
-  
-    const route = useRoute(); 
+
+    const route = useRoute();
     const router = useRouter();
     const id = route.params.id;
 
     const goToMangasList = () => {
-      const currentPage = route.query.page || 1; 
+      const currentPage = route.query.page || 1;
       router.push({ name: 'Mangas', query: { page: currentPage } });
     };
 
     onMounted(async () => {
       try {
-        const response = await axios.get(`http://localhost:3000/api/mangas/${id}`);
+        const response = await axios.get(`https://vue-mangas-api.onrender.com/api/mangas/${id}`);
         manga.value = response.data.data;
       } catch (error) {
         console.error('Erreur lors de la récupération du manga', error);
