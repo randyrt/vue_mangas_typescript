@@ -22,7 +22,7 @@
     </div>
 
     <!-- Loader -->
-    <div v-else class="container-fluid">
+    <div v-else class="container-fluid loading">
       <div class="row">
         <div class="col-12">
           <h4 class="text-center text-white">Chargement en cours...</h4>
@@ -137,6 +137,11 @@ export default defineComponent({
 
 .section-un .fw-bold {
   font-size: 1-px !important;
+}
+
+.section-un .loading {
+  margin-top: 200px !important;
+  min-height: 100vh;
 }
 
 .pagination-controls {
