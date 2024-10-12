@@ -1,74 +1,78 @@
 <template>
-  <section class="mt-4 section-un">
-    <div class="container-fluid" data-aos="zoom-in">
-      <swiper :modules="[Autoplay, Pagination, Navigation]" :slides-per-view="3" :space-between="10" class="mySwiper"
-        :loop="true" :autoplay="{ delay: 1000, disableOnInteraction: false, pauseOnMouseEnter: true }">
+  <main v-if="manga">
+    <section class="mt-4 section-un">
+      <div class="container-fluid" data-aos="zoom-in">
+        <swiper :modules="[Autoplay, Pagination, Navigation]" :slides-per-view="3" :space-between="10" class="mySwiper"
+          :loop="true" :autoplay="{ delay: 1000, disableOnInteraction: false, pauseOnMouseEnter: true }">
 
-        <swiper-slide v-for="(image, index) in manga?.imagesManga" :key="index">
-          <img :src="image" alt="Image du manga" class="image-manga img-fluid" />
-        </swiper-slide>
+          <swiper-slide v-for="(image, index) in manga?.imagesManga" :key="index">
+            <img :src="image" alt="Image du manga" class="image-manga img-fluid" />
+          </swiper-slide>
 
-        <div class="swiper-pagination"></div>
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
-      </swiper>
-    </div>
-  </section>
-  <section class="section-deux" data-aos="zoom-in">
-    <div class="container-fluid">
-      <div class="row justify-content-center">
-        <div class="col-md-12">
-          <div class="shadow-sm card infos">
-            <div class="text-center text-white card-header bg-card">
-              <h4>{{ manga?.titre || "Titre non disponible" }}</h4>
-            </div>
-            <div class="card-body information">
-              <div class="row">
-                <div class="text-center col-lg-3">
-                  <img :src="manga?.imagesCreateur" alt="Créateur de l'image" class="creator">
-                </div>
-                <div class="col-lg-9">
-                  <p>
-                    <strong> Créateur :</strong>
-                    <a v-if="manga?.createur" :href="manga?.link" target="_blank" class="ml-3">
-                      <strong></strong> {{ manga.createur }}
-                    </a>
-                  </p>
+          <div class="swiper-pagination"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </swiper>
+      </div>
+    </section>
+    <section class="section-deux" data-aos="zoom-in">
+      <div class="container-fluid">
+        <div class="row justify-content-center">
+          <div class="col-md-12">
+            <div class="shadow-sm card infos">
+              <div class="text-center text-white card-header bg-card">
+                <h4>{{ manga?.titre || "Titre non disponible" }}</h4>
+              </div>
+              <div class="card-body information">
+                <div class="row">
+                  <div class="text-center col-lg-3">
+                    <img :src="manga?.imagesCreateur" alt="Créateur de l'image" class="creator">
+                  </div>
+                  <div class="col-lg-9">
+                    <p>
+                      <strong> Créateur :</strong>
+                      <a v-if="manga?.createur" :href="manga?.link" target="_blank" class="ml-3">
+                        <strong></strong> {{ manga.createur }}
+                      </a>
+                    </p>
 
-                  <p v-if="manga?.dateDeSortie" class="mb-3">
-                    <strong>Date de sortie :</strong> {{ manga.dateDeSortie }}
-                  </p>
+                    <p v-if="manga?.dateDeSortie" class="mb-3">
+                      <strong>Date de sortie :</strong> {{ manga.dateDeSortie }}
+                    </p>
 
-                  <p v-if="manga?.nombreDeSaisons" class="mb-3">
-                    <strong>Nombre de saison :</strong> {{ manga.nombreDeSaisons }}
-                  </p>
+                    <p v-if="manga?.nombreDeSaisons" class="mb-3">
+                      <strong>Nombre de saison :</strong> {{ manga.nombreDeSaisons }}
+                    </p>
 
-                  <p v-if="manga?.resume" class="mb-3">
-                    <strong>Résumé :</strong> {{ manga.resume }}
-                  </p>
-                  <p v-else class="text-danger">Informations non disponibles...</p>
+                    <p v-if="manga?.resume" class="mb-3">
+                      <strong>Résumé :</strong> {{ manga.resume }}
+                    </p>
+                    <p v-else class="text-danger">Informations non disponibles...</p>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-    <div class="mt-3 row d-flex justify-content-center back">
-      <div class="text-center col-12">
-        <button @click="goToMangasList" class="mt-2 mb-2 btn btn-primary">Retour</button>
-      </div>
-    </div>
-  </section>
-  <section class="section-trois">
-    <div class="container-fluid loadpage">
-      <div class="row justify-content-center align-items-center">
-        <div class="col-12">
-          <h4 class="text-center text-white">Chargement en cours</h4>
+      <div class="mt-3 row d-flex justify-content-center back">
+        <div class="text-center col-12">
+          <button @click="goToMangasList" class="mt-2 mb-2 btn btn-primary">Retour</button>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
+  </main>
+  <main v-else>
+    <section class="section-trois">
+      <div class="container-fluid loadpage">
+        <div class="row justify-content-center align-items-center">
+          <div class="col-12">
+            <h4 class="text-center text-white">Chargement en cours</h4>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
 
 </template>
 
@@ -217,6 +221,7 @@ a:hover {
 }
 
 .section-trois .loadpage {
+  margin-top: 10px;
   padding-top: 200px;
   min-height: 100vh;
 }
