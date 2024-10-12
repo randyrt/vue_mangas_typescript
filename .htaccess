@@ -1,0 +1,13 @@
+# Assurez-vous que les fichiers d'erreur personnalisés sont disponibles
+ErrorDocument 404 /404.html
+ErrorDocument 500 /500.html
+
+
+# Activer la réécriture d'URL
+RewriteEngine On
+
+# Rediriger les requêtes vers le fichier index.html
+RewriteRule ^index\.html$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.html [L]

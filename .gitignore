@@ -10,6 +10,7 @@ lerna-debug.log*
 node_modules
 .DS_Store
 dist
+my-express-vue-app
 dist-ssr
 coverage
 *.local
