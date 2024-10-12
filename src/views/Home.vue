@@ -49,9 +49,16 @@
             L'ensemble du projet est conçu selon les meilleures pratiques de développement, garantissant performance,
             sécurité, et évolutivité.
           </p>
-          <p class="link text-center"><a href="https://github.com/randyrt/vue_mangas_typescript" target="_blank">Voir
-              les codes sources</a>
-          </p>
+          <div class="d-flex justify-content-start align-items-center p-2">
+            <p class="me-2 m-lg-4 text-black fw-bold">Frontend : </p>
+            <a href="https://github.com/randyrt/vue_mangas_typescript" target="_blank" class="me-2">Voir
+              le code source</a>
+            <p class="me-2 m-lg-4 text-black fw-bold">Backend : </p>
+            <a href="https://github.com/randyrt/vue_mangas_api" target="_blank">
+              Voir
+              le code source</a>
+          </div>
+
         </div>
       </div>
     </div>
@@ -111,14 +118,24 @@ a {
   width: 60%;
 }
 
-.text-container .link {
-  padding: 20px;
+.text-container a {
+  padding: 15px;
   background-color: rgb(191, 6, 3) !important;
   color: rgb(240, 243, 189) !important;
   text-decoration: none !important;
   max-width: 200px;
   font-weight: bold;
-  border-radius: 20px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.text-container a:hover {
+  color: rgb(240, 243, 189) !important;
+  background-color: rgba(191, 6, 3, 0.726) !important;
+  text-decoration: none !important;
+  max-width: 200px;
+  font-weight: bold;
+  border-radius: 10px;
   cursor: pointer;
 }
 </style>
