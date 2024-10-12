@@ -180,6 +180,7 @@ a:hover {
 .section-deux p {
   color: rgb(240, 243, 189) !important;
   font-size: 17px;
+  font-weight: bold
 }
 
 
