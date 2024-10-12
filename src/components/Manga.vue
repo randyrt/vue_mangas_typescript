@@ -212,6 +212,10 @@ a:hover {
   width: 120px;
 }
 
+.section-trois {
+  background-color: rgba(119, 74, 54, 0.527);
+}
+
 .section-trois .loadpage {
   padding-top: 200px;
   min-height: 100vh;
