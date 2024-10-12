@@ -14,7 +14,6 @@
       </swiper>
     </div>
   </section>
-
   <section class="section-deux" data-aos="zoom-in">
     <div class="container-fluid">
       <div class="row justify-content-center">
@@ -58,6 +57,15 @@
     <div class="mt-3 row d-flex justify-content-center back">
       <div class="text-center col-12">
         <button @click="goToMangasList" class="mt-2 mb-2 btn btn-primary">Retour</button>
+      </div>
+    </div>
+  </section>
+  <section class="section-trois">
+    <div class="container-fluid loadpage">
+      <div class="row justify-content-center align-items-center">
+        <div class="col-12">
+          <h4 class="text-center text-white">Chargement en cours</h4>
+        </div>
       </div>
     </div>
   </section>
@@ -202,5 +210,10 @@ a:hover {
   color: rgb(240, 243, 189) !important;
   border: 1px solid rgb(191, 6, 3) !important;
   width: 120px;
+}
+
+.section-trois .loadpage {
+  padding-top: 200px;
+  min-height: 100vh;
 }
 </style>
