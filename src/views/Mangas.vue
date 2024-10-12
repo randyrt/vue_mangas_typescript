@@ -140,6 +140,7 @@ export default defineComponent({
 }
 
 .section-un .loading {
+  margin-top: 10px;
   padding-top: 200px !important;
   min-height: 100vh;
 }
