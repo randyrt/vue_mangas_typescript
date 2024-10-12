@@ -49,9 +49,7 @@
             L'ensemble du projet est conçu selon les meilleures pratiques de développement, garantissant performance,
             sécurité, et évolutivité.
           </p>
-          <p class="link"><a href="https://github.com/randyrt/vue_mangas_typescript" target="_blank">Voir les codes
-              sources
-              sur github</a>
+          <p class="link"><a href="https://github.com/randyrt/vue_mangas_typescript" target="_blank">Voir les codes sources</a>
           </p>
         </div>
       </div>
