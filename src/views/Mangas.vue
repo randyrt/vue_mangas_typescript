@@ -74,7 +74,7 @@ export default defineComponent({
       currentPage.value = pageFromQuery;
 
       try {
-        const response = await axios.get('https://vue-mangas-typescript-two.onrender.com/api/mangas');
+        const response = await axios.get('https://vue-mangas-api.onrender.com/api/mangas');
         mangas.value = response.data.data;
       } catch (error) {
         console.log('Erreur lors de la récupération des mangas', error);

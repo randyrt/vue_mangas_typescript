@@ -119,7 +119,7 @@ export default defineComponent({
 
     onMounted(async () => {
       try {
-        const response = await axios.get(`https://vue-mangas-typescript-two.onrender.com/api/mangas/${id}`);
+        const response = await axios.get(`https://vue-mangas-api.onrender.com/api/mangas/${id}`);
         manga.value = response.data.data
         console.log(manga.value)
       } catch (error) {
