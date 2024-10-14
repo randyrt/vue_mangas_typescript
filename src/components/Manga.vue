@@ -67,7 +67,7 @@
       <div class="container-fluid loadpage">
         <div class="row justify-content-center align-items-center">
           <div class="col-12">
-            <h4 class="text-center text-white">Chargement en cours</h4>
+            <h4 class="text-center text-white">Chargement en cours...</h4>
           </div>
         </div>
       </div>
