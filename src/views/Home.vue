@@ -1,6 +1,6 @@
 <template>
   <section>
-    <div class="mt-5 container-fluid text-container" data-aos="zoom-in">
+    <div class="mt-3 container-fluid text-container" data-aos="zoom-in">
       <div class="row">
         <div class="col-12">
 
@@ -49,11 +49,11 @@
             L'ensemble du projet est conçu selon les meilleures pratiques de développement, garantissant performance,
             sécurité, et évolutivité.
           </p>
-          <div class="d-flex justify-content-start align-items-center p-2">
-            <p class="me-2 m-lg-4 text-black fw-bold">Frontend : </p>
+          <div class="p-2 d-flex justify-content-start align-items-center">
+            <p class="text-black me-2 m-lg-4 fw-bold">Frontend : </p>
             <a href="https://github.com/randyrt/vue_mangas_typescript" target="_blank" class="me-2">Voir
               le code source</a>
-            <p class="me-2 m-lg-4 text-black fw-bold">Backend : </p>
+            <p class="text-black me-2 m-lg-4 fw-bold">Backend : </p>
             <a href="https://github.com/randyrt/vue_mangas_api" target="_blank">
               Voir
               le code source</a>
@@ -93,10 +93,9 @@ a {
 
 .text-container {
   background-color: rgba(119, 74, 54, 0.74);
-  padding: 100px;
+  padding: 50px;
   color: rgb(240, 243, 189) !important;
   border-radius: 10px;
-  margin-bottom: 59px;
 }
 
 .text-container h1 {

@@ -9,6 +9,10 @@
     "baseUrl": ".",
     "paths": {
       "@/*": ["./src/*"]
-    }
+    },
+    "module": "esnext",           
+    "target": "esnext",           
+    "lib": ["esnext", "dom"],  
+    "types": ["vite/client"]  
   }
 }

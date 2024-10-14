@@ -11,6 +11,7 @@
           <div class="navbar-nav">
             <router-link class="nav-link" active-class="active" to="/">Accueil</router-link>
             <router-link class="nav-link" active-class="active" to="/mangas">Classement</router-link>
+            <router-link class="nav-link" active-class="active" to="/actus">Actualité</router-link>
           </div>
         </div>
       </div>
@@ -39,6 +40,7 @@ html {
 body {
   font-family: "Poppins", sans-serif !important;
   background-size: cover !important;
+  background-color: rgba(119, 74, 54, 0.74);
   min-height: 100vh !important;
 }
 

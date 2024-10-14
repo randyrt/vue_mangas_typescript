@@ -119,8 +119,9 @@ export default defineComponent({
 
     onMounted(async () => {
       try {
-        const response = await axios.get(`https://vue-mangas-api.onrender.com/api/mangas/${id}`);
-        manga.value = response.data.data;
+        const response = await axios.get(`http://localhost:3000/api/mangas/${id}`);
+        manga.value = response.data.data
+        console.log(manga.value)
       } catch (error) {
         console.error('Erreur lors de la récupération du manga', error);
       }

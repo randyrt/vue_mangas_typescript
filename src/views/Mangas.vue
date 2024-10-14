@@ -74,7 +74,7 @@ export default defineComponent({
       currentPage.value = pageFromQuery;
 
       try {
-        const response = await axios.get('https://vue-mangas-api.onrender.com/api/mangas');
+        const response = await axios.get('http://localhost:3000/api/mangas');
         mangas.value = response.data.data;
       } catch (error) {
         console.log('Erreur lors de la récupération des mangas', error);
@@ -140,7 +140,6 @@ export default defineComponent({
 }
 
 .section-un .loading {
-  margin-top: 10px;
   padding-top: 200px !important;
   min-height: 100vh;
 }
