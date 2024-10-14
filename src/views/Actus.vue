@@ -160,6 +160,7 @@ export default defineComponent({
   text-overflow: ellipsis;
   line-height: 1rem;
   font-weight: bolder;
+  color: #000 !important;
 }
 
 .btn-primary,
