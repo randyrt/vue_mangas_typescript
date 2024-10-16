@@ -26,10 +26,10 @@
       <div class="row">
         <div class="col-12">
           <h4 class="mb-2 text-white tex2t-center">
-            Veuillez noter que cette page peut prendre un certain temps à se recharger
+            Veuillez noter que cette page peut prendre un certain temps à se recharger en raison
           </h4>
           <h4 class="mb-5 text-center text-white">
-            en raison de la latence du serveur. En attendant, n'hésitez pas à consulter les actualités du jour
+            de la latence du serveur. En attendant, n'hésitez pas à consulter les actualités du jour
           </h4>
 
           <h4 class="text-center text-white">Chargement en cours...</h4>
