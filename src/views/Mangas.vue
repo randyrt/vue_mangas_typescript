@@ -25,7 +25,7 @@
     <div v-else class="container-fluid loading">
       <div class="row">
         <div class="col-12">
-          <h4 class="mb-2 text-white tex2t-center">
+          <h4 class="mb-2 text-center text-white">
             Veuillez noter que cette page peut prendre un certain temps à se recharger en raison
           </h4>
           <h4 class="mb-5 text-center text-white">
