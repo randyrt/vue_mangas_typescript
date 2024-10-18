@@ -25,13 +25,6 @@
     <div v-else class="container-fluid loading">
       <div class="row">
         <div class="col-12">
-          <h4 class="mb-2 text-center text-white">
-            Veuillez noter que cette page peut prendre un certain temps à se recharger en raison de son status
-          </h4>
-          <h4 class="mb-5 text-center text-white">
-            "sleepless", sur un hote gratuit. En attendant, n'hésitez pas à consulter les actualités du jour
-          </h4>
-
           <h4 class="text-center text-white">Chargement en cours...</h4>
         </div>
       </div>
