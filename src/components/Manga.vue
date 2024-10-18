@@ -73,7 +73,6 @@
       </div>
     </section>
   </main>
-
 </template>
 
 <script lang="ts">
@@ -229,8 +228,7 @@ a:hover {
 }
 
 .section-trois .loadpage {
-  margin-top: 10px;
-  padding-top: 200px;
+  padding-top: 210px;
   min-height: 100vh;
 }
 </style>
