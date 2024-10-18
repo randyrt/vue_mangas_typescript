@@ -81,8 +81,14 @@ export default defineComponent({
       currentPage.value = pageFromQuery;
 
       try {
-        const response = await axios.get('https://vuemangasapi-production.up.railway.app/api/mangas');
-        mangas.value = response.data
+        const response = await axios.get('https://vuemangasapi-production.up.railway.app/api/mangas', {
+          headers: {
+            'Content-Type': 'application/json',
+            'Accept': 'application/json'
+          },
+          timeout: 5000
+        });
+        mangas.value = response.data;
       } catch (error) {
         console.log('Erreur lors de la récupération des mangas', error);
       }
