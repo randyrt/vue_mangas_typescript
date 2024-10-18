@@ -74,7 +74,7 @@ export default defineComponent({
       currentPage.value = pageFromQuery;
 
       try {
-        const response = await axios.get('http://localhost:3000/api/mangas', {
+        const response = await axios.get('https://vuemangasapi-production.up.railway.app/api/mangas', {
           headers: {
             'Content-Type': 'application/json',
             'Accept': 'application/json'
