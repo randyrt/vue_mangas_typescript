@@ -92,12 +92,15 @@ section {
   min-height: 100vh;
 }
 
+h1 {
+  color: rgb(240, 243, 189) !important;
+}
+
 a {
   text-decoration: none !important;
 }
 
 .text-container {
-
   padding: 50px;
   color: rgb(240, 243, 189) !important;
   border-radius: 10px;
