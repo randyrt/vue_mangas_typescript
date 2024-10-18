@@ -1,7 +1,7 @@
 <template>
   <section v-if="paginatedMangas.length" class="p-2 section-un">
     <div class="container" data-aos="zoom-in">
-      <h1 class="text-center text-white display-5">Populaire en ce moment</h1>
+      <h1 class="text-center text-white display-5">Populaire en ce moment selon Anilist</h1>
       <div class="mt-2" v-if="paginatedMangas.length > 0">
         <!-- Début d'une ligne de mangas -->
         <div class="row">
