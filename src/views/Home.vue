@@ -1,6 +1,6 @@
 <template>
   <section>
-    <div class="mt-3 container-fluid text-container" data-aos="zoom-in">
+    <div class="container-fluid text-container" data-aos="zoom-in">
       <div class="row">
         <div class="col-12">
 
@@ -87,12 +87,17 @@ export default defineComponent({
 </script>
 
 <style scoped>
+section {
+  background-color: rgba(119, 74, 54, 0.74);
+  min-height: 100vh;
+}
+
 a {
   text-decoration: none !important;
 }
 
 .text-container {
-  background-color: rgba(119, 74, 54, 0.74);
+
   padding: 50px;
   color: rgb(240, 243, 189) !important;
   border-radius: 10px;

@@ -1,7 +1,7 @@
 <template>
   <section class="section-un">
     <div v-if="paginatedMangas.length" class="container-fluid" data-aos="zoom-in">
-      <div v-for="(manga, mangaIndex) in paginatedMangas" :key="mangaIndex" class="mt-3 swiper-container">
+      <div v-for="(manga, mangaIndex) in paginatedMangas" :key="mangaIndex" class="p-2 swiper-container">
         <div class="text-center">
           <p class="text-white fw-bold" style="font-size: 15px">{{ manga.id }} - {{ manga.titre }}</p>
           <button @click="goToDetails(manga.id)" class="mb-2 btn btn-primary">
@@ -74,7 +74,7 @@ export default defineComponent({
       currentPage.value = pageFromQuery;
 
       try {
-        const response = await axios.get('https://vuemangasapi-production.up.railway.app/api/mangas', {
+        const response = await axios.get('http://localhost:3000/api/mangas', {
           headers: {
             'Content-Type': 'application/json',
             'Accept': 'application/json'
@@ -141,6 +141,7 @@ export default defineComponent({
 
 .section-un {
   background-color: rgba(119, 74, 54, 0.74);
+  min-height: 100vh;
 }
 
 .section-un .fw-bold {

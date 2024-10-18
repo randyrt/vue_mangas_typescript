@@ -1,11 +1,11 @@
 <template>
-  <section v-if="paginatedMangas.length" class="section-un">
+  <section v-if="paginatedMangas.length" class="p-2 section-un">
     <div class="container" data-aos="zoom-in">
-      <h1 class="mt-3 text-center text-white display-5">Populaire en ce moment</h1>
-      <div class="mt-3" v-if="paginatedMangas.length > 0">
+      <h1 class="text-center text-white display-5">Populaire en ce moment</h1>
+      <div class="mt-2" v-if="paginatedMangas.length > 0">
         <!-- Début d'une ligne de mangas -->
         <div class="row">
-          <div class="mb-2 col-12 col-sm-6 col-md-4" v-for="manga in paginatedMangas" :key="manga?.id">
+          <div class="mb-3 col-12 col-sm-6 col-md-4" v-for="manga in paginatedMangas" :key="manga?.id">
             <div class="p-4 card">
               <img :src="manga?.coverImage.large" class=" card-img-top anilistImage" alt="image cover "
                 style="height: 250px;">
@@ -150,6 +150,7 @@ export default defineComponent({
 <style scoped>
 .section-un {
   background-color: rgba(119, 74, 54, 0.74);
+  min-height: 100vh;
 }
 
 .description {
