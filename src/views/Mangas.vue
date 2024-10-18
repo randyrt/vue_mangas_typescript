@@ -88,7 +88,9 @@ export default defineComponent({
           },
           timeout: 5000
         });
-        mangas.value = response.data;
+        mangas.value = response.data.data;
+        console.log(mangas.value)
+
       } catch (error) {
         console.log('Erreur lors de la récupération des mangas', error);
       }

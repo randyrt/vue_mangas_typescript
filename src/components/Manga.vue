@@ -120,7 +120,8 @@ export default defineComponent({
     onMounted(async () => {
       try {
         const response = await axios.get(`https://vuemangasapi-production.up.railway.app/api/mangas/${id}`);
-        manga.value = response.data
+        manga.value = response.data.data
+        console.log(manga.value)
         console.log(manga.value)
       } catch (error) {
         console.error('Erreur lors de la récupération du manga', error);
